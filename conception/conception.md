@@ -27,3 +27,11 @@ ENTREE: numero entrée, ligne 1, ligne 2, ligne 3, ligne 4, ligne 5, ligne 6
 **jour**(<ins>id</ins>, numero)  
 **mois**(<ins>id</ins>, label)  
 **entree**(<ins>id</ins>, ligne1, ligne2, ligne3, ligne4, ligne5, ligne6, #auteur(id), #tag(id), #jour(id), #mois(id))
+
+## Sqitch
+
+To init Sqitch on new project
+
+```cmd
+sqitch init project_name --engine pg --target db:pg:my_db --top-dir migrations
+```
