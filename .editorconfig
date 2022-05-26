@@ -12,11 +12,7 @@ end_of_line = lf
 max_line_length = 100
 quote_type = single
 
-[ * . {
-   json,
-   yml,
-   md
-}]
+[ .md ]
 trim_trailing_whitespace = false
 
 [CHANGELOG.md]
