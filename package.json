@@ -1,0 +1,36 @@
+{
+  "name": "almanach_api_graphql",
+  "version": "1.0.0",
+  "description": "API for Almanach de Millevaux, in GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgathePons/Almanach_API_graphQL.git"
+  },
+  "author": "AgathePons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgathePons/Almanach_API_graphQL/issues"
+  },
+  "homepage": "https://github.com/AgathePons/Almanach_API_graphQL#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "node-dev": "^7.4.3",
+    "prettier": "^2.6.2",
+    "prettier-plugin-sql": "^0.7.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
+}
