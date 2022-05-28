@@ -1,40 +1,34 @@
 require('dotenv').config();
 const debug = require('debug')('Apollo');
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer } = require('apollo-server');
+const pool = require('./app/config/pool');
 
 const port = process.env.PORT || 3000;
 
-const typeDefs = gql`
-  # Auteur
-  type Auteur {
-    pseudo: String
-  }
+const typeDefs = require('./app/graphql/schema');
+const resolvers = require('./app/graphql/resolvers');
+const Auteur = require('./app/graphql/datasources/auteur');
+const Tag = require('./app/graphql/datasources/tag');
+const Jour = require('./app/graphql/datasources/jour');
+const Mois = require('./app/graphql/datasources/mois');
 
-  # Query
-  type Query {
-    auteurs: [Auteur]
-  }
-`;
-
-const auteurs = [
-  {
-    pseudo: 'Thomas Munier',
-  },
-  {
-    pseudo: 'Autre gars',
-  },
-];
-
-const resolvers = {
-  Query: {
-    auteurs: () => auteurs,
-  },
+const config = {
+  client: 'pg',
+  connection: pool,
 };
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  csrfPrevention: true,
+  csrfPrevention: true, // ??
+  dataSources: () => (
+    {
+      auteur: new Auteur(config),
+      tag: new Tag(config),
+      jour: new Jour(config),
+      mois: new Mois(config),
+    }
+  ),
 });
 
 server.listen(port).then(({ url }) => {

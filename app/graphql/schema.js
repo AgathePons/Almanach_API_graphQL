@@ -32,6 +32,6 @@ module.exports = `
   # Model mois
   type Mois {
     id: ID!
-    text: String!
+    label: String!
   }
 `;
