@@ -15,16 +15,18 @@ class Tag extends SQLDataSource {
   // All tags
   async getTags() {
     debug('getTags');
-    const tags = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
+    const tags = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .cache(TTL);
     return tags;
   }
 
-  // On tag by id
-  async getTagById(id) {
-    debug(`getTagById tagID: ${id}`);
+  // One tag by id
+  async getTagById(tagId) {
+    debug(`getTagById tagID: ${tagId}`);
     const tagRows = await this.knex(this.tableName).connection(this.connection)
       .select('*')
-      .where({ id })
+      .where({ id: tagId })
       .cache(TTL);
     return tagRows[0];
   }

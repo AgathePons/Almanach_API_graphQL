@@ -1,18 +1,31 @@
 module.exports = `
   # Liste des queries
   type Query {
+
     # Liste des auteurs
     auteurs: [Auteur]
+    # Un auteur par son id
+    auteurById(id: ID!): Auteur
+
     # Liste des tags
     tags: [Tag]
     # Un tag par son id
-    #tag(id: !ID): Tag
+    tagById(id: ID!): Tag
+
     # Liste des jours
     jours: [Jour]
+    # Un jour par son id
+    #jourById(id: ID!): Jour
+
     # Liste des mois
     mois: [Mois]
+    # Un mois par son id
+    #moisById(id: ID!): Mois
+
     # Liste des entrées
     entrees: [Entree]
+    # Une entree par son id
+    #entreeById(id: ID!): Entree
   }
 
   # Model auteurs
@@ -52,5 +65,9 @@ module.exports = `
     tag_id: Int!
     jour_id: Int!
     mois_id: Int!
+    tag: Tag
+    auteur: Auteur
+    #jour: Jour
+    #mois: Mois
   }
 `;

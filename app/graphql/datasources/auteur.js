@@ -12,10 +12,21 @@ class Auteur extends SQLDataSource {
     this.connection = config.connection;
   }
 
+  // All auteurs
   async getAuteurs() {
     debug('getAuteurs');
     const allAuteurs = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
     return allAuteurs;
+  }
+
+  // On auteur by id
+  async getAuteurById(auteurId) {
+    debug(`getAuteurById auteurID: ${auteurId}`);
+    const auteurRows = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ id: auteurId })
+      .cache(TTL);
+    return auteurRows[0];
   }
 }
 

@@ -6,16 +6,21 @@ module.exports = {
     const auteurs = await dataSources.auteur.getAuteurs();
     return auteurs;
   },
+  auteurById: async (_, { id }, { dataSources }) => {
+    debug('auteur');
+    const auteur = await dataSources.auteur.getAuteurById(id);
+    return auteur;
+  },
   tags: async (_, __, { dataSources }) => {
     debug('tags');
     const tags = await dataSources.tag.getTags();
     return tags;
   },
-  /* tag: async (_, { id }, { dataSources }) => {
+  tagById: async (_, { id }, { dataSources }) => {
     debug('tag');
     const tag = await dataSources.tag.getTagById(id);
     return tag;
-  }, */
+  },
   jours: async (_, __, { dataSources }) => {
     debug('jours');
     const jours = await dataSources.jour.getJours();
