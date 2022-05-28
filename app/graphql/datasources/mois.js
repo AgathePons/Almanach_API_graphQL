@@ -12,10 +12,21 @@ class Mois extends SQLDataSource {
     this.connection = config.connection;
   }
 
+  // All mois
   async getMois() {
     debug('getMois');
     const mois = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
     return mois;
+  }
+
+  // One mois by id
+  async getMoisById(moisId) {
+    debug(`getMoisById moisID: ${moisId}`);
+    const moisRows = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ id: moisId })
+      .cache(TTL);
+    return moisRows[0];
   }
 }
 

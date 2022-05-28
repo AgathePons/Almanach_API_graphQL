@@ -19,7 +19,7 @@ class Auteur extends SQLDataSource {
     return allAuteurs;
   }
 
-  // On auteur by id
+  // One auteur by id
   async getAuteurById(auteurId) {
     debug(`getAuteurById auteurID: ${auteurId}`);
     const auteurRows = await this.knex(this.tableName).connection(this.connection)

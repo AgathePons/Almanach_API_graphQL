@@ -15,12 +15,12 @@ module.exports = `
     # Liste des jours
     jours: [Jour]
     # Un jour par son id
-    #jourById(id: ID!): Jour
+    jourById(id: ID!): Jour
 
     # Liste des mois
     mois: [Mois]
     # Un mois par son id
-    #moisById(id: ID!): Mois
+    moisById(id: ID!): Mois
 
     # Liste des entrées
     entrees: [Entree]
@@ -67,7 +67,7 @@ module.exports = `
     mois_id: Int!
     tag: Tag
     auteur: Auteur
-    #jour: Jour
-    #mois: Mois
+    jour: Jour
+    mois: Mois
   }
 `;

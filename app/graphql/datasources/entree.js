@@ -12,6 +12,7 @@ class Entree extends SQLDataSource {
     this.connection = config.connection;
   }
 
+  // All antrees
   async getEntrees() {
     debug('getEntrees');
     const entrees = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
