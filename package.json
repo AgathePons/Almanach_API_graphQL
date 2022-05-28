@@ -33,7 +33,6 @@
     "datasource-sql": "^2.0.1",
     "debug": "^4.3.4",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1",
     "graphql": "^16.5.0",
     "pg": "^8.7.3"
   }

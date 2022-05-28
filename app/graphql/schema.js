@@ -5,10 +5,14 @@ module.exports = `
     auteurs: [Auteur]
     # Liste des tags
     tags: [Tag]
+    # Un tag par son id
+    #tag(id: !ID): Tag
     # Liste des jours
     jours: [Jour]
     # Liste des mois
     mois: [Mois]
+    # Liste des entrées
+    entrees: [Entree]
   }
 
   # Model auteurs
@@ -33,5 +37,20 @@ module.exports = `
   type Mois {
     id: ID!
     label: String!
+  }
+
+  # Model Entrees
+  type Entree {
+    id: ID!
+    ligne_1: String!
+    ligne_2: String!
+    ligne_3: String!
+    ligne_4: String!
+    ligne_5: String!
+    ligne_6: String!
+    auteur_id: Int!
+    tag_id: Int!
+    jour_id: Int!
+    mois_id: Int!
   }
 `;

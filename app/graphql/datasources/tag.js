@@ -12,10 +12,21 @@ class Tag extends SQLDataSource {
     this.connection = config.connection;
   }
 
+  // All tags
   async getTags() {
     debug('getTags');
     const tags = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
     return tags;
+  }
+
+  // On tag by id
+  async getTagById(id) {
+    debug(`getTagById tagID: ${id}`);
+    const tagRows = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ id })
+      .cache(TTL);
+    return tagRows[0];
   }
 }
 

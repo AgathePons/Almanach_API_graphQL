@@ -63,7 +63,7 @@ INSERT INTO "mois" (label) VALUES
 ('Vomembres'),
 ('Descendres');
 
-INSERT INTO "entree" ("ligne 1", "ligne 2", "ligne 3", "ligne 4", "ligne 5", "ligne 6", auteur_id, tag_id, jour_id, mois_id) VALUES
+INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "ligne_6", auteur_id, tag_id, jour_id, mois_id) VALUES
 -- Charnier
 ('Ils courent', 'Ils sont tous proches maintenant', 'Il ne me reste que deux balles', 'Une pour le premier qui entrera', 'Et la suivante pour...', 'Stop', 1, 1, 1, 1),
 ('Noires pullulations', 'Ferments', 'Animalcules enfouies dans le terreau de la forêt', 'Regard sans fond', 'Plasme omniscient', 'Shub-Niggurath veille', 1, 6, 2, 1),

@@ -11,6 +11,11 @@ module.exports = {
     const tags = await dataSources.tag.getTags();
     return tags;
   },
+  /* tag: async (_, { id }, { dataSources }) => {
+    debug('tag');
+    const tag = await dataSources.tag.getTagById(id);
+    return tag;
+  }, */
   jours: async (_, __, { dataSources }) => {
     debug('jours');
     const jours = await dataSources.jour.getJours();
@@ -20,5 +25,10 @@ module.exports = {
     debug('mois');
     const mois = await dataSources.mois.getMois();
     return mois;
+  },
+  entrees: async (_, __, { dataSources }) => {
+    debug('entrees');
+    const entrees = await dataSources.entree.getEntrees();
+    return entrees;
   },
 };

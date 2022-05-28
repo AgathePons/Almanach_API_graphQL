@@ -11,6 +11,7 @@ const Auteur = require('./app/graphql/datasources/auteur');
 const Tag = require('./app/graphql/datasources/tag');
 const Jour = require('./app/graphql/datasources/jour');
 const Mois = require('./app/graphql/datasources/mois');
+const Entree = require('./app/graphql/datasources/entree');
 
 const config = {
   client: 'pg',
@@ -27,6 +28,7 @@ const server = new ApolloServer({
       tag: new Tag(config),
       jour: new Jour(config),
       mois: new Mois(config),
+      entree: new Entree(config),
     }
   ),
 });
