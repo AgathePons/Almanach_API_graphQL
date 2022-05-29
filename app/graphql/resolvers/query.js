@@ -8,7 +8,7 @@ module.exports = {
     return auteurs;
   },
   auteurById: async (_, { id }, { dataSources }) => {
-    debug('auteur');
+    debug('auteur by id');
     const auteur = await dataSources.auteur.getAuteurById(id);
     return auteur;
   },
@@ -19,7 +19,7 @@ module.exports = {
     return tags;
   },
   tagById: async (_, { id }, { dataSources }) => {
-    debug('tag');
+    debug('tag by id');
     const tag = await dataSources.tag.getTagById(id);
     return tag;
   },
@@ -30,7 +30,7 @@ module.exports = {
     return jours;
   },
   jourById: async (_, { id }, { dataSources }) => {
-    debug('jour');
+    debug('jour by id');
     const jour = await dataSources.tag.getJourById(id);
     return jour;
   },
@@ -41,7 +41,7 @@ module.exports = {
     return mois;
   },
   moisById: async (_, { id }, { dataSources }) => {
-    debug('mois');
+    debug('mois by id');
     const mois = await dataSources.tag.getMoisById(id);
     return mois;
   },
@@ -49,6 +49,16 @@ module.exports = {
   entrees: async (_, __, { dataSources }) => {
     debug('entrees');
     const entrees = await dataSources.entree.getEntrees();
+    return entrees;
+  },
+  entreeById: async (_, { id }, { dataSources }) => {
+    debug('entree by id');
+    const entree = await dataSources.entree.getEntreeById(id);
+    return entree;
+  },
+  entreesByAuteur: async (_, { test }, { dataSources }) => {
+    debug('entrees by auteur_id');
+    const entrees = await dataSources.entree.getEntreesByAuteurId(id);
     return entrees;
   },
 };

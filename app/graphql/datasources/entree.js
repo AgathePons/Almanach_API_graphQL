@@ -12,10 +12,30 @@ class Entree extends SQLDataSource {
     this.connection = config.connection;
   }
 
-  // All antrees
+  // All entrees
   async getEntrees() {
     debug('getEntrees');
     const entrees = await this.knex(this.tableName).connection(this.connection).select('*').cache(TTL);
+    return entrees;
+  }
+
+  // One entree by id
+  async getEntreeById(entreeId) {
+    debug(`getEntreeById entreeID: ${entreeId}`);
+    const entreeRows = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ id: entreeId })
+      .cache(TTL);
+    return entreeRows[0];
+  }
+
+  // Entrees by auteur_id
+  async getEntreesByAuteurId(auteurId) {
+    debug(`getEntreesByAuteurId auteurID: ${auteurId}`);
+    const entrees = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ auteur_id: auteurId })
+      .cache(TTL);
     return entrees;
   }
 }

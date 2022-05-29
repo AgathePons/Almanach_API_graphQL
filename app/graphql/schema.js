@@ -25,13 +25,16 @@ module.exports = `
     # Liste des entrées
     entrees: [Entree]
     # Une entree par son id
-    #entreeById(id: ID!): Entree
+    entreeById(id: ID!): Entree
+    # Liste des entrées par auteurs
+    entreesByAuteur(auteur_id: ID!): [Entree]
   }
 
   # Model auteurs
   type Auteur {
     id: ID!
     pseudo: String!
+    entrees: [Entree]
   }
 
   # Model tags
