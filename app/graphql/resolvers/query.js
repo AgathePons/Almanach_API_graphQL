@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const debug = require('debug')('Resolvers:Query');
 
 module.exports = {
@@ -42,7 +43,7 @@ module.exports = {
   },
   moisById: async (_, { id }, { dataSources }) => {
     debug('mois by id');
-    const mois = await dataSources.tag.getMoisById(id);
+    const mois = await dataSources.mois.getMoisById(id);
     return mois;
   },
   // Entree
@@ -56,9 +57,24 @@ module.exports = {
     const entree = await dataSources.entree.getEntreeById(id);
     return entree;
   },
-  entreesByAuteur: async (_, { test }, { dataSources }) => {
+  entreesByAuteur: async (_, { auteur_id }, { dataSources }) => {
     debug('entrees by auteur_id');
-    const entrees = await dataSources.entree.getEntreesByAuteurId(id);
+    const entrees = await dataSources.entree.getEntreesByAuteurId(auteur_id);
+    return entrees;
+  },
+  entreesByTag: async (_, { tag_id }, { dataSources }) => {
+    debug('entrees by tag_id');
+    const entrees = await dataSources.entree.getEntreesByTagId(tag_id);
+    return entrees;
+  },
+  entreesByJour: async (_, { jour_id }, { dataSources }) => {
+    debug('entrees by jour_id');
+    const entrees = await dataSources.entree.getEntreesByJourId(jour_id);
+    return entrees;
+  },
+  entreesByMois: async (_, { mois_id }, { dataSources }) => {
+    debug('entrees by mois_id');
+    const entrees = await dataSources.entree.getEntreesByMoisId(mois_id);
     return entrees;
   },
 };

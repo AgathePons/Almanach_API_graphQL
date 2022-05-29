@@ -26,8 +26,14 @@ module.exports = `
     entrees: [Entree]
     # Une entree par son id
     entreeById(id: ID!): Entree
-    # Liste des entrées par auteurs
-    entreesByAuteur(auteur_id: ID!): [Entree]
+    # Liste des entrées par auteur
+    entreesByAuteur(auteur_id: Int!): [Entree]
+    # Liste des entrées par tag
+    entreesByTag(tag_id: Int!): [Entree]
+    # Liste des entrées par jour
+    entreesByJour(jour_id: Int!): [Entree]
+    # Liste des entrées par mois
+    entreesByMois(mois_id: Int!): [Entree]
   }
 
   # Model auteurs
@@ -41,18 +47,21 @@ module.exports = `
   type Tag {
     id: ID!
     tag: String!
+    entrees: [Entree]
   }
 
   # Model jours
   type Jour {
     id: ID!
     numero: Int!
+    entrees: [Entree]
   }
 
   # Model mois
   type Mois {
     id: ID!
     label: String!
+    entrees: [Entree]
   }
 
   # Model Entrees
@@ -64,10 +73,10 @@ module.exports = `
     ligne_4: String!
     ligne_5: String!
     ligne_6: String!
-    auteur_id: Int!
-    tag_id: Int!
-    jour_id: Int!
-    mois_id: Int!
+    #auteur_id: Int!
+    #tag_id: Int!
+    #jour_id: Int!
+    #mois_id: Int!
     tag: Tag
     auteur: Auteur
     jour: Jour

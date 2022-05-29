@@ -38,6 +38,36 @@ class Entree extends SQLDataSource {
       .cache(TTL);
     return entrees;
   }
+
+  // Entrees by tag_id
+  async getEntreesByTagId(tagId) {
+    debug(`getEntreesByTagId tagID: ${tagId}`);
+    const entrees = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ tag_id: tagId })
+      .cache(TTL);
+    return entrees;
+  }
+
+  // Entrees by jour_id
+  async getEntreesByJourId(jourId) {
+    debug(`getEntreesByJourId jourID: ${jourId}`);
+    const entrees = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ jour_id: jourId })
+      .cache(TTL);
+    return entrees;
+  }
+
+  // Entrees by mois_id
+  async getEntreesByMoisId(moisId) {
+    debug(`getEntreesByMoisId moisID: ${moisId}`);
+    const entrees = await this.knex(this.tableName).connection(this.connection)
+      .select('*')
+      .where({ mois_id: moisId })
+      .cache(TTL);
+    return entrees;
+  }
 }
 
 module.exports = Entree;
