@@ -47,9 +47,43 @@ module.exports = {
     return mois;
   },
   // Entree
-  entrees: async (_, __, { dataSources }) => {
+  /* entrees: async (_, __, { dataSources }) => {
     debug('entrees');
     const entrees = await dataSources.entree.getEntrees();
+    return entrees;
+  }, */
+  entrees: async (_, args, { dataSources }) => {
+    debug('entrees');
+    debug('args:', args);
+    const { input } = args;
+    const shouldApplyFilters = input !== undefined;
+    debug('filter:', shouldApplyFilters);
+    let entrees = await dataSources.entree.getEntrees();
+
+    if (!shouldApplyFilters) {
+      debug('no filter');
+      return entrees;
+    }
+    const shouldApplyAuteurFilter = input.auteur !== undefined;
+    debug('shouldApplyAuteurFilter', shouldApplyAuteurFilter);
+    const shouldApplyTagFilter = input.tag !== undefined;
+    debug('shouldApplyTagFilter', shouldApplyTagFilter);
+    const shouldApplyMoisFilter = input.mois !== undefined;
+    debug('shouldApplyMoisFilter', shouldApplyMoisFilter);
+
+    if (shouldApplyAuteurFilter) {
+      debug('Filter by auteur');
+      entrees = entrees.filter((entree) => entree.auteur_id === input.auteur);
+    }
+    if (shouldApplyTagFilter) {
+      debug('Filter by tag');
+      entrees = entrees.filter((entree) => entree.tag_id === input.tag);
+    }
+    if (shouldApplyMoisFilter) {
+      debug('Filter by mois');
+      entrees = entrees.filter((entree) => entree.mois_id === input.mois);
+    }
+
     return entrees;
   },
   entreeById: async (_, { id }, { dataSources }) => {

@@ -23,7 +23,7 @@ module.exports = `
     moisById(id: ID!): Mois
 
     # Liste des entrées
-    entrees: [Entree]
+    entrees(input: EntreesInput): [Entree]
     # Une entree par son id
     entreeById(id: ID!): Entree
     # Liste des entrées par auteur
@@ -34,8 +34,28 @@ module.exports = `
     entreesByJour(jour_id: Int!): [Entree]
     # Liste des entrées par mois
     entreesByMois(mois_id: Int!): [Entree]
+    # Liste des entrees filtrées
+    #entreesFiltered(tag_id: [Int]): [Entree]
   }
 
+  ########################################
+
+  # Filters & Inputs
+
+  input EntreesFilters {
+    auteur: Int
+    tag: Int
+    mois: Int
+  }
+
+input EntreesInput {
+  auteur: Int
+  tag: Int
+  mois: Int
+}
+
+
+  ########################################
   # Model auteurs
   type Auteur {
     id: ID!
