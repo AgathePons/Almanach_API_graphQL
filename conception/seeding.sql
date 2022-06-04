@@ -80,6 +80,16 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Depuis que je suis aveugle', 'Je ressens l''égrégore', 'Je vois les émotions', 'Je lis dans le passé, le futur', 'J''ai bien fait de me crever les yeux !', '', '', 1, 5, 1, 5),
 ('Seul passage à travers la forêt', 'Source de vie', 'L''endroit à traverser pour effacer ses traces', 'La rivière est un espoir', 'Et aussi un piège', '', '', 1, 2, 2, 5),
 ('Hue, hue, hue !', 'Les enfants font la chasse au Dahu', 'Oh, oh, oh !', 'Ils en abandonnent un là-haut', 'Dia, dia, dia !', 'Il sera la proie du Horla', '', 1, 6, 3, 5),
-('J''ai vu marcher', 'De noirs cœlacanthes', 'J''ai vu glisser', 'Des limaces sans forme', 'J''ai vu frissonner', 'La chair des anémones', 'La forêt de corail', 1, 2, 4, 5);
+('J''ai vu marcher', 'De noirs cœlacanthes', 'J''ai vu glisser', 'Des limaces sans forme', 'J''ai vu frissonner', 'La chair des anémones', 'La forêt de corail', 1, 2, 4, 5),
+-- Chien
+('Pourquoi ces fièvres nocturnes ?', 'Les horreurs dites sur moi ?', 'Pourquoi me réveillé-je', 'Chaque matin', 'Fourbu', 'Des plumes noires', 'Dans mon lit ?', 1, 6, 1, 6),
+('Tout allait bien au village', 'Jusqu''au jour où', 'Nos femmes ont donné', 'Naissance', 'À des animaux', '', '', 1, 4, 2, 6),
+('À l''abri de la forêt', 'Dans nos maisons', 'Entassant les choses', 'Qui nous seraient utiles un jour', 'Jusqu''à être submergés', 'Par une forêt d''objets', '', 1, 4, 3, 6),
+('Des rivières de sueur', 'Des montagnes de membres', 'Des murailles de dents', 'Des buissons de poils', 'Des landes de lambeaux', 'Et des forêts de peau', '', 1, 2, 4, 6),
+-- Vrillette
+('Grenades-arbres', 'Humus truffé de mines antipersonnel', 'Fosses comme des bouches d''épieux', 'Lianes étrangleuses', 'Sonne la guérilla forestière !', '', '', 1, 2, 1, 7),
+('Meuglements de bêtes', 'Et d''hommes devenus fous', 'Tremblement des feuilles', 'Il pleut à pierre fondre', 'La nuit !', 'La forêt de Creutzfeldt-Jakob', '', 1, 2, 2, 7),
+('On nous disait clochards', 'Nous étions pionniers, libres', 'Chercheurs d''or', 'On nous disait fous', 'Nous étions les seuls', 'À pouvoir s''en sortir', '', 1, 1, 3, 7),
+('Les cendres du mort', 'Avec ce four', 'J''en ferai un diamant', 'Avec cette terre', 'J''en ferai un arbre', 'Avec ce vin', 'J''en ferai un philtre de mémoire', 1, 3, 4, 7);
 
 COMMIT;

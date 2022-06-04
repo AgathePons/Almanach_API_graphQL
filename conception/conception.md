@@ -22,11 +22,19 @@ ENTREE: numero entrée, ligne 1, ligne 2, ligne 3, ligne 4, ligne 5, ligne 6
 
 ## MLD
 
-**auteur**(<ins>id</ins>, pseudo)  
-**tag**(<ins>id</ins>, tag)  
-**jour**(<ins>id</ins>, numero)  
-**mois**(<ins>id</ins>, label)  
+**auteur**(<ins>id</ins>, pseudo)
+**tag**(<ins>id</ins>, tag)
+**jour**(<ins>id</ins>, numero)
+**mois**(<ins>id</ins>, label)
 **entree**(<ins>id</ins>, ligne1, ligne2, ligne3, ligne4, ligne5, ligne6, #auteur(id), #tag(id), #jour(id), #mois(id))
+
+## Seeding
+
+To seed
+
+```cmd
+psql -U <user> -d <db> -f conception/seeding.sql
+```
 
 ## Sqitch
 
