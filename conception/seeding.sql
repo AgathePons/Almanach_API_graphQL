@@ -90,6 +90,11 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Grenades-arbres', 'Humus truffé de mines antipersonnel', 'Fosses comme des bouches d''épieux', 'Lianes étrangleuses', 'Sonne la guérilla forestière !', '', '', 1, 2, 1, 7),
 ('Meuglements de bêtes', 'Et d''hommes devenus fous', 'Tremblement des feuilles', 'Il pleut à pierre fondre', 'La nuit !', 'La forêt de Creutzfeldt-Jakob', '', 1, 2, 2, 7),
 ('On nous disait clochards', 'Nous étions pionniers, libres', 'Chercheurs d''or', 'On nous disait fous', 'Nous étions les seuls', 'À pouvoir s''en sortir', '', 1, 1, 3, 7),
-('Les cendres du mort', 'Avec ce four', 'J''en ferai un diamant', 'Avec cette terre', 'J''en ferai un arbre', 'Avec ce vin', 'J''en ferai un philtre de mémoire', 1, 3, 4, 7);
+('Les cendres du mort', 'Avec ce four', 'J''en ferai un diamant', 'Avec cette terre', 'J''en ferai un arbre', 'Avec ce vin', 'J''en ferai un philtre de mémoire', 1, 3, 4, 7),
+-- Outre
+('J''ai cet eczéma au coude', 'Pourquoi ?', 'C''était un mauvais souvenir ?', 'Un sorcier a dû le voler', 'Pour nourrir sa magie', 'Du bon mana pour lui', '', 1, 3, 1, 8),
+('La rivière dégorge', 'De squames et de sanie', 'Rampent des horlas', 'Hideux de verrues et de bourrelets', 'L''usine de peau s''est remise en marche !', '', '', 1, 4, 2, 8),
+('La peur en voyant bouger', 'Ces arbres maigres et moussus', 'Puis la terreur', 'En réalisant que c''étaient', 'Les pattes grêles', 'D''un cerf trop grand !', '', 1, 6, 3, 8),
+('Quand on a vu les premiers germes', 'Sortir des êtres et des choses', 'Il était trop tard', 'Il était déjà enraciné', 'En chacun de nous', 'Le champignon', '', 1, 4, 4, 8);
 
 COMMIT;
