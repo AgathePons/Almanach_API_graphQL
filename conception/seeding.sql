@@ -103,6 +103,11 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('J''ai cet eczéma au coude', 'Pourquoi ?', 'C''était un mauvais souvenir ?', 'Un sorcier a dû le voler', 'Pour nourrir sa magie', 'Du bon mana pour lui', null, 1, 3, 1, 8),
 ('La rivière dégorge', 'De squames et de sanie', 'Rampent des horlas', 'Hideux de verrues et de bourrelets', 'L''usine de peau s''est remise en marche !', null, null, 1, 4, 2, 8),
 ('La peur en voyant bouger', 'Ces arbres maigres et moussus', 'Puis la terreur', 'En réalisant que c''étaient', 'Les pattes grêles', 'D''un cerf trop grand !', null, 1, 6, 3, 8),
-('Quand on a vu les premiers germes', 'Sortir des êtres et des choses', 'Il était trop tard', 'Il était déjà enraciné', 'En chacun de nous', 'Le champignon', null, 1, 4, 4, 8);
+('Quand on a vu les premiers germes', 'Sortir des êtres et des choses', 'Il était trop tard', 'Il était déjà enraciné', 'En chacun de nous', 'Le champignon', null, 1, 4, 4, 8),
+-- Serpente
+('Au marché de la mémoire', 'Madeleines de Proust', 'Gâteaux d''anniversaire', 'Vin chagrin', 'Banquets régurgités', 'Hostie du pardon', 'Premières dents', 1, 3, 1, 9),
+('Microbes de porcelaine', 'Graviers à pseudopodes', 'Limon vivant', 'Foraminifères', 'Cellules de pierre', 'Roche liquide', 'Minuscule emprise minérale', 1, 4, 2, 9),
+('Les microbes que nous tuons', 'Les insectes que nous avalons', 'La viande que nous mangeons', 'Notre impact sur la forêt…', 'Toute vie est un crime', null, null, 1, 4, 3, 9),
+('Tout est parti en vrille', 'Quand les gens', 'Se sont tous nourris', 'De cette bouillie blanche', 'Œuf, farine, lait', 'Protéines, vitamines', 'Soylent', 1, 4, 4, 9);
 
 COMMIT;
