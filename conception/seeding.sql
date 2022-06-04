@@ -108,6 +108,11 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Au marché de la mémoire', 'Madeleines de Proust', 'Gâteaux d''anniversaire', 'Vin chagrin', 'Banquets régurgités', 'Hostie du pardon', 'Premières dents', 1, 3, 1, 9),
 ('Microbes de porcelaine', 'Graviers à pseudopodes', 'Limon vivant', 'Foraminifères', 'Cellules de pierre', 'Roche liquide', 'Minuscule emprise minérale', 1, 4, 2, 9),
 ('Les microbes que nous tuons', 'Les insectes que nous avalons', 'La viande que nous mangeons', 'Notre impact sur la forêt…', 'Toute vie est un crime', null, null, 1, 4, 3, 9),
-('Tout est parti en vrille', 'Quand les gens', 'Se sont tous nourris', 'De cette bouillie blanche', 'Œuf, farine, lait', 'Protéines, vitamines', 'Soylent', 1, 4, 4, 9);
+('Tout est parti en vrille', 'Quand les gens', 'Se sont tous nourris', 'De cette bouillie blanche', 'Œuf, farine, lait', 'Protéines, vitamines', 'Soylent', 1, 4, 4, 9),
+-- Vomembres
+('Nous manipulons sans précaution', 'Des arbres miniatures', 'Qui sont des bombes', 'Des plumes', 'Ou des remèdes', 'Croissance, rétrécissement', 'Fiables ?', 1, 6, 1, 10),
+('Le blast !', 'Tout implose dans ta tête', 'Ton corps', 'Grand moment', 'Douleur vertige cauchemar', 'Où la réalité du monde enfoui', 'T''apparaît toute nue !', 1, 1, 2, 10),
+('La beauté du bois brûlé', 'Forêt de cendres', 'Fragments de feuilles parcheminées', 'Odeur d''holocauste', 'Ce que ça me rappelle', 'De l''ancien empire', null, 1, 4, 3, 10),
+('Patiente collection', 'De ses peaux mortes', 'Et de ses cheveux tombés', 'Des kilos par an', 'Pour confectionner', 'Masques et homoncules', 'Sarcomantiques', 1, 1, 4, 10);
 
 COMMIT;
