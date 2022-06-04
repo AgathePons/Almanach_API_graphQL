@@ -118,6 +118,11 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Nous manipulons sans précaution', 'Des arbres miniatures', 'Qui sont des bombes', 'Des plumes', 'Ou des remèdes', 'Croissance, rétrécissement', 'Fiables ?', 1, 4, 1, 11),
 ('Le blast !', 'Tout implose dans ta tête', 'Ton corps', 'Grand moment', 'Douleur vertige cauchemar', 'Où la réalité du monde enfoui', 'T''apparaît toute nue !', 1, 3, 2, 11),
 ('La beauté du bois brûlé', 'Forêt de cendres', 'Fragments de feuilles parcheminées', 'Odeur d''holocauste', 'Ce que ça me rappelle', 'De l''ancien empire', null, 1, 1, 3, 11),
-('Patiente collection', 'De ses peaux mortes', 'Et de ses cheveux tombés', 'Des kilos par an', 'Pour confectionner', 'Masques et homoncules', 'Sarcomantiques', 1, 4, 4, 11);
+('Patiente collection', 'De ses peaux mortes', 'Et de ses cheveux tombés', 'Des kilos par an', 'Pour confectionner', 'Masques et homoncules', 'Sarcomantiques', 1, 4, 4, 11),
+-- Descendres
+('Lorsque j''ai mangé', 'Cet oiseau humide', 'Je me suis sentie', 'Différente', 'Un tourbillon m''a prise', 'Et plus rien n''a été comme avant...', null, 2, 4, 1, 12),
+('Dis-moi', 'S''il te plaît', 'Quel goût je peux avoir', 'Et je te laisserai me manger', 'Juste dis-moi', 'S''il te plaît', 'Doux rêveur', 2, 4, 2, 12),
+('Le feuillage a prospéré', 'Nous laissant seules', 'Dans le noir', 'Puis la lune rouge', 'Est apparue', 'Attendant la nuit', 'Pour nous juger', 2, 2, 3, 12),
+('La voix dans ma tête', 'M''a demandé de sacrifier mon fils', 'Pour s''assurer de ma témérité', 'Mais il ne m''a pas arrêté...', null, null, null, 2, 5, 4, 12),
 
 COMMIT;
