@@ -109,10 +109,15 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Microbes de porcelaine', 'Graviers à pseudopodes', 'Limon vivant', 'Foraminifères', 'Cellules de pierre', 'Roche liquide', 'Minuscule emprise minérale', 1, 4, 2, 9),
 ('Les microbes que nous tuons', 'Les insectes que nous avalons', 'La viande que nous mangeons', 'Notre impact sur la forêt…', 'Toute vie est un crime', null, null, 1, 4, 3, 9),
 ('Tout est parti en vrille', 'Quand les gens', 'Se sont tous nourris', 'De cette bouillie blanche', 'Œuf, farine, lait', 'Protéines, vitamines', 'Soylent', 1, 4, 4, 9),
+-- Opprobre
+('J''ai d''abord entendu son brame', 'Tel l''appel de l''évangile', 'Ivre de chasse et d''extase', 'J''ai vu le cerf', 'Et dans ses bois', 'La croix de lumière !', null, 1, 6, 1, 10),
+('Au plafond', 'Comme pendeloques profanes', 'Des lianes dont la glu', 'Emprisonne les insectes', 'Frondaison morbide et visqueuse', 'Papiers tue-mouche', null, 1, 1, 2, 10),
+('Parcourir tout Millevaux', 'À la recherche de mets de choix', 'Nouvelles chairs', 'Cuissons exotiques', 'Saveurs inconnues', 'Aristocratisme cannibale', null, 1, 4, 3, 10),
+('Nous ne sommes pas des marginaux', 'Nous sommes les explorateurs', 'Et les gardiens des frontières', 'Nous avons tout abandonné', 'Pour votre survie', null, null, 1, 1, 4, 10),
 -- Vomembres
-('Nous manipulons sans précaution', 'Des arbres miniatures', 'Qui sont des bombes', 'Des plumes', 'Ou des remèdes', 'Croissance, rétrécissement', 'Fiables ?', 1, 6, 1, 10),
-('Le blast !', 'Tout implose dans ta tête', 'Ton corps', 'Grand moment', 'Douleur vertige cauchemar', 'Où la réalité du monde enfoui', 'T''apparaît toute nue !', 1, 1, 2, 10),
-('La beauté du bois brûlé', 'Forêt de cendres', 'Fragments de feuilles parcheminées', 'Odeur d''holocauste', 'Ce que ça me rappelle', 'De l''ancien empire', null, 1, 4, 3, 10),
-('Patiente collection', 'De ses peaux mortes', 'Et de ses cheveux tombés', 'Des kilos par an', 'Pour confectionner', 'Masques et homoncules', 'Sarcomantiques', 1, 1, 4, 10);
+('Nous manipulons sans précaution', 'Des arbres miniatures', 'Qui sont des bombes', 'Des plumes', 'Ou des remèdes', 'Croissance, rétrécissement', 'Fiables ?', 1, 4, 1, 11),
+('Le blast !', 'Tout implose dans ta tête', 'Ton corps', 'Grand moment', 'Douleur vertige cauchemar', 'Où la réalité du monde enfoui', 'T''apparaît toute nue !', 1, 3, 2, 11),
+('La beauté du bois brûlé', 'Forêt de cendres', 'Fragments de feuilles parcheminées', 'Odeur d''holocauste', 'Ce que ça me rappelle', 'De l''ancien empire', null, 1, 1, 3, 11),
+('Patiente collection', 'De ses peaux mortes', 'Et de ses cheveux tombés', 'Des kilos par an', 'Pour confectionner', 'Masques et homoncules', 'Sarcomantiques', 1, 4, 4, 11);
 
 COMMIT;
