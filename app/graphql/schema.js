@@ -73,6 +73,7 @@ module.exports = `
     ligne_4: String!
     ligne_5: String!
     ligne_6: String!
+    ligne_7: String!
     #auteur_id: Int!
     #tag_id: Int!
     #jour_id: Int!
