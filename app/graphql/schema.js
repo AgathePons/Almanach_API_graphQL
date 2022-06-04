@@ -41,18 +41,11 @@ module.exports = `
   ########################################
 
   # Filters & Inputs
-
-  input EntreesFilters {
+  input EntreesInput {
     auteur: Int
     tag: Int
     mois: Int
   }
-
-input EntreesInput {
-  auteur: Int
-  tag: Int
-  mois: Int
-}
 
 
   ########################################
