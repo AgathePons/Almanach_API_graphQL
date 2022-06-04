@@ -67,13 +67,13 @@ module.exports = `
   # Model Entrees
   type Entree {
     id: ID!
-    ligne_1: String!
-    ligne_2: String!
-    ligne_3: String!
-    ligne_4: String!
-    ligne_5: String!
-    ligne_6: String!
-    ligne_7: String!
+    ligne_1: String
+    ligne_2: String
+    ligne_3: String
+    ligne_4: String
+    ligne_5: String
+    ligne_6: String
+    ligne_7: String
     #auteur_id: Int!
     #tag_id: Int!
     #jour_id: Int!
