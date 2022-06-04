@@ -67,9 +67,13 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 -- Charnier
 ('Ils courent', 'Ils sont tous proches maintenant', 'Il ne me reste que deux balles', 'Une pour le premier qui entrera', 'Et la suivante pour...', 'Stop', '', 1, 1, 1, 1),
 ('Noires pullulations', 'Ferments', 'Animalcules enfouies dans le terreau de la forêt', 'Regard sans fond', 'Plasme omniscient', 'Shub-Niggurath veille', '', 1, 6, 2, 1),
+('Ramifications et rayonnements d''écorce', 'Noyau sphérique', 'Branches qui dardent à l''infini', 'Tumeurs', 'Craquelures et éclairs', 'L''Arbre-Soleil !', '', 1, 6, 3, 1),
+('Je lui ai demandé de me tirer une lame', 'Dans le Tarot de l''Oubli', 'Elle a tiré la Mort', 'Saperlotte !', 'Comment j''ai pu oublier que j''étais mort ?', '', '', 1, 3, 4, 1),
 -- Merdier
 ('Elle m''a demandé de tirer', 'Une lame du Tarot de l''Oubli', 'J''ai tiré la Mort', 'Fichtre !', 'Comment ai-je pu oublier', 'Que j''étais la Mort ?', '', 3, 5, 1, 2),
 ('Nous nous couvrîmes', 'De carcasses d''animaux', 'Pour apaiser leur colère', 'Mais les horlas', 'Ne sont pas dupes...', '', '', 4, 6, 2, 2),
+('Tous alignés comme des rapaces', 'Me scrutant du haut de leur perchoir', 'Je croque dans un', 'Et à moi le septième ciel', 'Attends... ?', '', '', 2, 6, 3, 2),
+('Un humain, laid, tordu', 'Maigrelet et sinistre', 'Voila tout ce que j''aime', 'Les douceurs d''autrefois', 'Se font trop rares, je crois', '', '', 2, 4, 4, 2),
 -- Marche
 ('Palétuviers', 'Sentiers nénuphars', 'Clairières de lentilles d''eau', 'Murs de prêles', 'Et buttes de vase', 'Le marais', 'était une grande forêt saumâtre', 1, 2, 1, 3),
 ('Je suis un nomade', 'Je ne laisse pas de trace', 'Je vis au jour le jour', 'Demain', 'Je serai peut-être mort', 'Nul ne se souviendra', 'de mon passage', 1, 1, 2, 3),
