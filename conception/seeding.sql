@@ -63,7 +63,7 @@ INSERT INTO "mois" (label) VALUES
 ('Vomembres'),
 ('Descendres');
 
-INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "ligne_6", "ligne_7", auteur_id, tag_id, jour_id, mois_id) VALUES
+INSERT INTO "entree" (ligne_1, ligne_2, ligne_3, ligne_4, ligne_5, ligne_6, ligne_7, auteur_id, tag_id, jour_id, mois_id) VALUES
 -- Charnier
 ('Ils courent', 'Ils sont tous proches maintenant', 'Il ne me reste que deux balles', 'Une pour le premier qui entrera', 'Et la suivante pour...', 'Stop', null, 1, 1, 1, 1),
 ('Noires pullulations', 'Ferments', 'Animalcules enfouies dans le terreau de la forêt', 'Regard sans fond', 'Plasme omniscient', 'Shub-Niggurath veille', null, 1, 6, 2, 1),
@@ -74,6 +74,10 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Nous nous couvrîmes', 'De carcasses d''animaux', 'Pour apaiser leur colère', 'Mais les horlas', 'Ne sont pas dupes...', null, null, 4, 6, 2, 2),
 ('Tous alignés comme des rapaces', 'Me scrutant du haut de leur perchoir', 'Je croque dans un', 'Et à moi le septième ciel', 'Attends... ?', null, null, 2, 6, 3, 2),
 ('Un humain, laid, tordu', 'Maigrelet et sinistre', 'Voila tout ce que j''aime', 'Les douceurs d''autrefois', 'Se font trop rares, je crois', null, null, 2, 4, 4, 2),
+('Ça t''monte dans la gorge', 'Et ça t''prend jusqu''aux tripes', 'La maladie d''bellegueuse', 'C''est l''agonie à p''tite dose', 'D''aut'' questions ?', null, null, 2, 4, 5, 2),
+('Il m''ont dit', 'Tiens vieux chn''oc', 'On va t''donner à lui', 'Oublie donc la jolie', 'Préfère c''qui est pourri', null, null, 2, 4, 6, 2),
+('C''est étrange tu sais', 'Mais chaque fois', 'Que je l''entends rire', 'Je tremble d''effroi', 'Oh mais...', 'Tu souris ?!', null, 2, 6, 7, 2),
+('Pile', 'Je mange le truc noir', 'Face', 'Je peux boire la boue', 'On fait comme ça ?', null, null, 2, 4, 8, 2),
 -- Marche
 ('Palétuviers', 'Sentiers nénuphars', 'Clairières de lentilles d''eau', 'Murs de prêles', 'Et buttes de vase', 'Le marais', 'était une grande forêt saumâtre', 1, 2, 1, 3),
 ('Je suis un nomade', 'Je ne laisse pas de trace', 'Je vis au jour le jour', 'Demain', 'Je serai peut-être mort', 'Nul ne se souviendra', 'de mon passage', 1, 1, 2, 3),
@@ -123,6 +127,6 @@ INSERT INTO "entree" ("ligne_1", "ligne_2", "ligne_3", "ligne_4", "ligne_5", "li
 ('Lorsque j''ai mangé', 'Cet oiseau humide', 'Je me suis sentie', 'Différente', 'Un tourbillon m''a prise', 'Et plus rien n''a été comme avant...', null, 2, 4, 1, 12),
 ('Dis-moi', 'S''il te plaît', 'Quel goût je peux avoir', 'Et je te laisserai me manger', 'Juste dis-moi', 'S''il te plaît', 'Doux rêveur', 2, 4, 2, 12),
 ('Le feuillage a prospéré', 'Nous laissant seules', 'Dans le noir', 'Puis la lune rouge', 'Est apparue', 'Attendant la nuit', 'Pour nous juger', 2, 2, 3, 12),
-('La voix dans ma tête', 'M''a demandé de sacrifier mon fils', 'Pour s''assurer de ma témérité', 'Mais il ne m''a pas arrêté...', null, null, null, 2, 5, 4, 12),
+('La voix dans ma tête', 'M''a demandé de sacrifier mon fils', 'Pour s''assurer de ma témérité', 'Mais il ne m''a pas arrêté...', null, null, null, 2, 5, 4, 12);
 
 COMMIT;

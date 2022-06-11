@@ -47,11 +47,6 @@ module.exports = {
     return mois;
   },
   // Entree
-  /* entrees: async (_, __, { dataSources }) => {
-    debug('entrees');
-    const entrees = await dataSources.entree.getEntrees();
-    return entrees;
-  }, */
   entrees: async (_, args, { dataSources }) => {
     debug('entrees');
     debug('args:', args);
